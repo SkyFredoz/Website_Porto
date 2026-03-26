@@ -46,6 +46,10 @@ sr.reveal(".featured-image", { delay: 320 });
 
 
 sr.reveal(".project-box", { interval: 200});
+sr.reveal(".project-detail-card", { interval: 100});
+sr.reveal(".certificate-card", { interval: 100});
+sr.reveal(".location-container", { delay: 200});
+sr.reveal(".map-card", { delay: 200});
 
 sr.reveal(".top-header", {});
 
