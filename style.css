@@ -608,6 +608,10 @@ i {
     z-index: 2;
 }
 
+body.dark .project-box h3 {
+    color: #fff;
+}
+
 .top-header span {
     color: var(--text-color);
 }
@@ -646,7 +650,18 @@ i {
 }
 
 .contact-info::after {
-    color: #8749f2;
+    content: "";
+    position: absolute;
+    bottom: -100%;
+    background: #8749f2;
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+    z-index: 0.1s;
+}
+
+.contact-info:hover::after {
+    bottom: 0;
 }
 
 .contact-info:hover.contact-info h2,
@@ -926,7 +941,13 @@ textarea {
 
 .card:hover {
     transform: translateY(-5px);
-    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 8px 12px rgba(135, 73, 242, 0.3);
+    border-color: #8749f2;
+}
+
+.map-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 12px rgba(135, 73, 242, 0.3);
 }
 
 /* Map Card Dark Mode */
